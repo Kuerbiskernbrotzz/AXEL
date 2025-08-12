@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "weather_server": {
+            "command": "python",
+            "args": ["-u", "mcp_client/servers/weather_server/weather_server.py"]
+        }
+    }
+}

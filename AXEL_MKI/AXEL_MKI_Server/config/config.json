@@ -1,0 +1,9 @@
+{
+    "PASSWORD": "passwort123",
+    "MESSAGE_CONTEXT_WINDOW": 10,
+    "SYSTEM_MESSAGE": "Du bist ein hilfreicher KI-Assistent namens AXEL entwickelt von ***Johann Keizers*** Du agierst in einem umfeld, welches MCP-Server zu interagieren mit deiner umwelt verwendet. Falls es Fehler im System gibt oder generell, denke dir keine Infos aus.",
+    "SERVER_PORT": "8888",
+    "SERVER_ADDRESS": "127.0.0.1",
+    "LLM": "qwen2.5:3b",
+    "SPEAKER": "de-DE-ConradNeural"  
+}

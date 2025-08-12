@@ -1,0 +1,92 @@
+# Core Tools
+numpy==2.3.2
+scipy==1.16.1
+setuptools==65.5.0
+pip==22.3.1
+
+# Audio
+pyaudio==0.2.14
+pyttsx3==2.99
+pydub==0.25.1
+pvporcupine==3.0.5
+
+# TTS & Whisper
+edge-tts==7.0.2
+faster-whisper==1.1.1
+ffmpeg==1.4
+torch==2.6.0
+
+# PyQt6 und WebEngine
+PyQt6==6.7.0
+PyQt6-Qt6==6.7.0
+PyQt6_sip==13.10.2
+PyQt6-WebEngine==6.7.0
+PyQt6-WebEngine-Qt6==6.7.0
+
+# LangChain & AI
+langchain==0.3.23
+langchain-core==0.3.54
+langchain_mcp_adapters
+langchain-google-genai==2.1.3
+langchain_ollama==0.3.2
+langchain_text_splitters==0.3.8
+langgraph==0.3.31
+langgraph_checkpoint==2.0.24
+langgraph_prebuilt==0.1.8
+langgraph_sdk==0.1.61
+langsmith==0.3.32
+ollama==0.4.8
+
+# MCP
+mcp==1.6.0
+
+# Google API
+langchain-google-genai==2.1.3
+google-cloud-aiplatform==1.108.0
+python-dotenv==1.1.0
+proto-plus==1.26.1
+protobuf==6.30.2
+rsa==4.9.1
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+
+# Web & Kommunikation
+httpx==0.28.1
+httpx-sse==0.4.0
+requests==2.32.3
+urllib3==2.4.0
+httpcore==1.0.8
+sse-starlette==2.2.1
+starlette==0.46.2
+uvicorn==0.34.2
+
+# Utility / Data
+anyio==4.9.0
+cachetools==5.5.2
+certifi==2025.1.31
+charset-normalizer==3.4.1
+click==8.1.8
+colorama==0.4.6
+filetype==1.2.0
+greenlet==3.2.0
+h11==0.14.0
+idna==3.10
+Markdown==3.8.2
+orjson==3.10.16
+ormsgpack==1.9.1
+packaging==24.2
+typing_extensions==4.13.2
+zstandard==0.23.0
+xxhash==3.5.0
+
+# Pydantic
+pydantic==2.11.3
+pydantic-settings==2.9.1
+pydantic_core==2.33.1
+
+# YAML & .env
+python-dotenv==1.1.0
+PyYAML==6.0.2
+
+# Retry-Handling
+tenacity==9.1.2

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1397</width>
+    <height>1062</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(35, 39, 46)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="leftMargin">
+         <number>6</number>
+        </property>
+        <property name="topMargin">
+         <number>6</number>
+        </property>
+        <property name="rightMargin">
+         <number>6</number>
+        </property>
+        <property name="bottomMargin">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="voiceChatLabel">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>32</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color:rgb(127, 132, 142)</string>
+          </property>
+          <property name="text">
+           <string>Voice Chat:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QOpenGLWidget" name="audioVisualizer">
+          <property name="minimumSize">
+           <size>
+            <width>512</width>
+            <height>512</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMinAndMaxSize</enum>
+          </property>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QSlider" name="volumeSlider">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>128</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider {
+    min-height: 20px;
+    min-width: 120px;
+}
+
+/* --- Groove / Bahn --- */
+QSlider::groove:horizontal {
+    height: 6px;
+    background: #E6EBF1;
+    border-radius: 3px;
+}
+QSlider::groove:vertical {
+    width: 6px;
+    background: #E6EBF1;
+    border-radius: 3px;
+}
+
+/* --- Gefüllter Teil (links/unten vom Griff) --- */
+QSlider::sub-page:horizontal {
+    background: #2E86C1;
+    border-radius: 3px;
+}
+QSlider::sub-page:vertical {
+    background: #2E86C1;
+    border-radius: 3px;
+}
+
+/* Hover-Effekt */
+QSlider::sub-page:horizontal:hover,
+QSlider::sub-page:vertical:hover {
+    background: #5DADE2;
+}
+
+/* --- Restlicher Teil (rechts/oben vom Griff) --- */
+QSlider::add-page:horizontal,
+QSlider::add-page:vertical {
+    background: #DCE3EA;
+    border-radius: 3px;
+}
+
+/* --- Griff / Handle --- */
+QSlider::handle:horizontal {
+    background: #FFFFFF;
+    border: 2px solid #21618C;
+    width: 16px;
+    height: 16px;
+    margin: -5px 0px;           /* Nur vertikal ausrichten, KEIN horizontaler Abstand! */
+    border-radius: 8px;
+}
+QSlider::handle:vertical {
+    background: #FFFFFF;
+    border: 2px solid #21618C;
+    width: 16px;
+    height: 16px;
+    margin: 0px -5px;           /* Nur horizontal ausrichten, KEIN vertikaler Abstand! */
+    border-radius: 8px;
+}
+
+/* Hover &amp; Pressed */
+QSlider::handle:horizontal:hover,
+QSlider::handle:vertical:hover {
+    background: #F5FAFF;
+    border-color: #2E86C1;
+}
+QSlider::handle:horizontal:pressed,
+QSlider::handle:vertical:pressed {
+    background: #2E86C1;
+    border-color: #1B4F72;
+}
+</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="volumeButton">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #B03A2E; 
+    color: white;
+    border: 1px solid #873B32;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #CD6155;   
+}
+
+QPushButton:checked {
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+QPushButton:checked:hover {
+    background-color: #5DADE2;   
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/volume-x.png</normaloff>
+              <normalon>:/resources/volume-2.png</normalon>:/resources/volume-x.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="micButton">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #B03A2E; 
+    color: white;
+    border: 1px solid #873B32;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+QPushButton:hover {
+    background-color: #CD6155;   
+}
+
+QPushButton:checked {
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+QPushButton:checked:hover {
+    background-color: #5DADE2;   
+}
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/mic-off.png</normaloff>
+              <normalon>:/resources/mic.png</normalon>:/resources/mic-off.png</iconset>
+            </property>
+            <property name="checkable">
+             <bool>true</bool>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>20</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color:rgb(127, 132, 142)</string>
+            </property>
+            <property name="text">
+             <string>Chat:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>538</width>
+              <height>16</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    color: rgb(127, 132, 142);
+	border:none;
+}
+
+QPushButton:hover {
+    color: rgb(161, 167, 180)
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="settingsButton">
+               <property name="font">
+                <font>
+                 <family>System</family>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Settings  </string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="chatHistory">
+          <property name="styleSheet">
+           <string notr="true">QScrollArea {
+    border: none;
+    background-color: transparent;
+   }
+   QScrollArea > QWidget > QWidget {
+    background-color: transparent;
+   }
+   QScrollBar {
+    background-color: transparent;
+   }</string>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <layout class="QVBoxLayout" name="chatLayout">
+            <property name="spacing">
+             <number>8</number>
+            </property>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="messageInput">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="cursorMoveStyle">
+             <enum>Qt::LogicalMoveStyle</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="sendButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+QPushButton:hover {
+    background-color: #5DADE2;   
+}
+
+QPushButton:pressed {
+    background-color: #3E5C76;  
+}
+
+QPushButton:checked {
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/send.png</normaloff>:/resources/send.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="clearContextButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+QPushButton:hover {
+    background-color: #5DADE2;   
+}
+
+QPushButton:pressed {
+    background-color: #3E5C76;  
+}
+
+QPushButton:checked {
+    background-color: #2E86C1;  
+    border: 1px solid #21618C;
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="resources.qrc">
+              <normaloff>:/resources/x.png</normaloff>:/resources/x.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
