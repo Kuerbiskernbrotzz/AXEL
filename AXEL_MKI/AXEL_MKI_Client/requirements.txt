@@ -7,7 +7,6 @@ python-dotenv==1.1.0
 
 # Audio
 pyaudio==0.2.14
-pyttsx3==2.99
 pydub==0.25.1
 simpleaudio==1.0.4
 pvporcupine==3.0.5
@@ -24,6 +23,7 @@ PyQt6-Qt6==6.7.0
 PyQt6_sip==13.10.2
 PyQt6-WebEngine==6.7.0
 PyQt6-WebEngine-Qt6==6.7.0
+pyinstaller==6.15.0
 
 # LangChain & AI
 langchain==0.3.23

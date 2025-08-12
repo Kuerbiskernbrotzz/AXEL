@@ -33,6 +33,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
+        MainWindow.setWindowIcon(QtGui.QIcon('resources/icon.png'))
         self.voiceChatLabel.setFont(font)
         self.voiceChatLabel.setStyleSheet("color:rgb(127, 132, 142)")
         self.voiceChatLabel.setObjectName("voiceChatLabel")
