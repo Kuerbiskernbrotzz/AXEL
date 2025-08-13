@@ -1,14 +1,11 @@
-Ich kann dir einen vollständigen Guide zur Installation von CUDA unter Linux und Windows im Markdown-Format erstellen. Allerdings kann ich dir **keine Datei zum Download anbieten**, da ich derzeit keine Möglichkeit habe, Dateien direkt zu erstellen oder zu exportieren. Du kannst den folgenden Markdown-Code einfach kopieren und in eine `.md`-Datei auf deinem Computer einfügen (z. B. `cuda-installation-guide.md`).
 
----
-
-```md
 # CUDA Installation Guide for Linux and Windows
 
 ## 🚀 Overview
 CUDA (Compute Unified Device Architecture) is a parallel computing platform and API model created by NVIDIA. This guide walks you through installing CUDA on both Linux and Windows systems.
-
 ---
+
+I recomend watching a YouTube tutorial if you have problems during the installation!
 
 ## 🐧 Linux Installation (Ubuntu/Debian-based)
 
@@ -77,22 +74,21 @@ Get-WmiObject win32_VideoController
 ```
 
 ### 2. Download CUDA Toolkit
-Visit [CUDA Downloads](https://developer.nvidia.com/cuda-downloads) and select your Windows version.
-
+   Visit: [https://developer.nvidia.com/cuda-toolkit-archive](https://developer.nvidia.com/cuda-toolkit-archive)  
+   Select:
+   - OS: **Windows**
+   - Architecture: **x86_64**
+   - Version: **e.g. 11 for Windows 11**
+   - Installer Type: **exe (local)**
+   - 
 ### 3. Run Installer
-- Choose **Express Installation** (recommended)
-- Installer includes:
-  - CUDA Toolkit
-  - NVIDIA Driver
-  - Nsight tools
-  - Samples
+   - **Run as Administrator**
+   - Accept license  
+   - Choose **Express Installation**
 
-### 4. Set Environment Variables
-Add to System PATH:
-```
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\bin
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.0\libnvvp
-```
+### 4. Restart
+  - full restart
+
 
 ### 5. Verify Installation
 Open Command Prompt:
@@ -100,7 +96,6 @@ Open Command Prompt:
 nvcc --version
 nvidia-smi
 ```
-
 ---
 
 ## ✅ Post-Installation Test
@@ -120,8 +115,5 @@ Expected output: `Result = PASS`
 - [CUDA Documentation](https://docs.nvidia.com/cuda/)
 - [NVIDIA Developer Zone](https://developer.nvidia.com/)
 
-```
 
----
 
-Wenn du möchtest, kann ich dir auch helfen, diesen Guide in eine HTML-Seite oder PDF umzuwandeln. Oder möchtest du ihn direkt in einem bestimmten Format wie LaTeX oder als Blogpost?
