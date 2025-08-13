@@ -27,11 +27,11 @@ It uses the MCP protocol for structured message handling and supports multiple m
   - Linux (comming soon)  
   - At least 8 GB RAM  
   - Microphone and speakers/headphones  
-  - NVIDIA GPU with CUDA support [Installation Guide](https://github.com/Kuerbiskernbrotzz/AXEL/blob/main/Tutorials/Cuda-Installation.md)
+  - NVIDIA GPU with CUDA support 
   - 4 GB VRAM or more
 
 ### Software
 - **Required:**  
   - Latest NVIDIA GPU drivers 
-  - CUDA Toolkit 13.0 (for GPU optimization)  
+  - CUDA Toolkit 13.0 [Installation Guide](https://github.com/Kuerbiskernbrotzz/AXEL/blob/main/Tutorials/Cuda-Installation.md)
 
