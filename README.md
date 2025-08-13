@@ -97,7 +97,7 @@ ollama list
 
   - You can also specify a password, port and the IP-adress of your server to create a network, where for example you have a linux machine with the server, wich runs the GPU and multiple clients, that are installed on desktop machines for example. (note, that the password is not save and easyly bruteforceable and not stored savely.
 
-  - You can install mcp servers and specify them in the mcp_config.json:
+  - You can install mcp servers and specify them in the mcp_config.json ([documentation](https://modelcontextprotocol.io/docs/getting-started/intro):
 
 ```plaintext
 C:\Program Files\AXEL_server_MK.I\_internal\mcp_config\mcp_config.json
