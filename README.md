@@ -1,5 +1,5 @@
 # AXEL
-Axel (Always Executing Errors Lovely) is an experimental voice- and text-based assistant that communicates through both speech and chat.  
+Axel (Always eXecuting Errors Lovely) is an experimental voice- and text-based assistant that communicates through both speech and chat.  
 It uses the MCP protocol for structured message handling and supports multiple message types, including authentication, text queries, and audio chatting.
 Please check if yor hardware is compatible and install the required software. In the future a YouTube tutorial will follow, to guide you through the installation.
 ---
@@ -97,13 +97,13 @@ ollama list
 
   - You can also specify a password, port and the IP-adress of your server to create a network, where for example you have a linux machine with the server, wich runs the GPU and multiple clients, that are installed on desktop machines for example. (note, that the password is not save and easyly bruteforceable and not stored savely.
 
-  - You can install mcp servers and specify them in the mcp_config.json ([documentation](https://modelcontextprotocol.io/docs/getting-started/intro):
+  - You can install mcp servers and specify them in the mcp_config.json ([documentation](https://modelcontextprotocol.io/docs/getting-started/intro)):
 
 ```plaintext
 C:\Program Files\AXEL_server_MK.I\_internal\mcp_config\mcp_config.json
 ```
 
-  - Own MCP servers or file-based ones can be put in:
+  - Own MCP servers or file-based ones can be put in this folder:
     
 ```plaintext
 C:\Program Files\AXEL_server_MK.I\_internal\mcp_client\servers\
