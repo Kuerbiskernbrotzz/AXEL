@@ -3,7 +3,7 @@
 from faster_whisper import WhisperModel
 from logger.logger import log
 # Konfiguration – kann später aus einer Config-Datei geladen werden
-MODEL_SIZE = "medium"
+MODEL_SIZE = "small"
 BEAM_SIZE = 5
 DEVICE = "cuda"  # Alternativ "cpu"
 COMPUTE_TYPE = "float32"  # z.B. "int8", "float16", "float32"

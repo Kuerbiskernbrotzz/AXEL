@@ -25,6 +25,7 @@ from util.audio_handling import send_audio_to_server
 from util.message_handling import send_text_to_server, clear_context
 from util.logger import setup_logger
 
+
 # Unterdrücke Qt Deprecation Warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 

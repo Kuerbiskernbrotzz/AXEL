@@ -12,9 +12,10 @@ from mcp_client.mcp_client import MCPClientManager
 from tts.TextToSpeech import text_to_speech
 from stt.SpeechToText import transcribe_audio
 from logger.logger import log
+from resource import resource_path
 
 def load_config():
-    config_path = Path(__file__).parent.parent / "config" / "config.json"
+    config_path = Path(__file__).parent / "config" / "config.json"
     try:
         with open(config_path, 'r') as f:
             return json.load(f)
@@ -31,7 +32,7 @@ clients = {}
 messages = []
 system_prompt = {"role": "system", "content": config["SYSTEM_MESSAGE"]}
 
-client_manager = MCPClientManager(config_path="mcp_config.json")
+client_manager = MCPClientManager(config_path="mcp_config/mcp_config.json")
 
 async def handle_client(reader: asyncio.StreamReader, writer: asyncio.StreamWriter):
     global messages   # <-- globale Variable "messages" deklarieren

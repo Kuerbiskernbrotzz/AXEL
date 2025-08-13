@@ -18,6 +18,7 @@ from langchain_ollama import ChatOllama
 from langchain_mcp_adapters.tools import load_mcp_tools
 from langgraph.prebuilt import create_react_agent
 from logger.logger import log
+from .resource_path import resource_path
 
 
 log.info("MCP-client initialized.")
@@ -30,8 +31,8 @@ def check_internet() -> bool:
         return False
 
 def load_config():
-    # Von src/mcp_client auf AXEL_X_MKIV wechseln -> drei Ebenen nach oben:
-    config_path = Path(__file__).resolve().parent.parent.parent / "config" / "config.json"
+
+    config_path = Path(__file__).resolve().parent.parent / "config" / "config.json"
     try:
         with open(config_path, 'r') as f:
             return json.load(f)
@@ -46,7 +47,7 @@ load_dotenv(env_path)
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 LLMO = ChatOllama(model=config["LLM"], temperature=0)
-
+LLMG = None 
 if GEMINI_API_KEY:
     try:
         LLMG = ChatGoogleGenerativeAI(model="gemini-1.5-flash", google_api_key=GEMINI_API_KEY)
@@ -89,8 +90,8 @@ def extract_latest_ai_message(response: str) -> Optional[str]:
 # Class: MCPClientManager
 # ---------------------------
 class MCPClientManager:
-    def __init__(self, config_path: str = "mcp_config.json"):
-        self.config_path = config_path
+    def __init__(self, config_path: str = "mcp_config/mcp_config.json"):
+        self.config_path = resource_path(config_path)
         self.tools: List[Any] = []
         self.llmo = LLMO
         self.llmg = LLMG
@@ -114,11 +115,23 @@ class MCPClientManager:
         mcp_servers = config.get("mcpServers", {})
         for server_name, server_info in mcp_servers.items():
             try:
+                command = server_info["command"]
+                args = server_info["args"]
+
+                # Prüfen, ob Pfad relativ zum Client aufgelöst werden soll (Standard True)
+                relative_to_client = server_info.get("relative_to_client", True)
+                if relative_to_client:
+                    for i, arg in enumerate(args):
+                        if arg.endswith(".py"):
+                            # Pfad korrekt auflösen, auch in PyInstaller (_MEIPASS)
+                            args[i] = resource_path(arg)
+
                 server_params = StdioServerParameters(
-                    command=server_info["command"],
-                    args=server_info["args"],
+                    command=command,
+                    args=args,
                     env=None
                 )
+
                 read, write = await self.exit_stack.enter_async_context(stdio_client(server_params))
                 session = await self.exit_stack.enter_async_context(ClientSession(read, write))
                 await session.initialize()
@@ -136,7 +149,7 @@ class MCPClientManager:
     async def process_query(self, query: dict) -> dict:
         """Process a query using the initialized agent."""
         ic = check_internet()
-        if self.llmg and self.llmg != None and ic == True:
+        if self.llmg and self.llmg != None and ic and GEMINI_API_KEY != "":
             try:
                 log.info("Using Gemini as LLM")
                 google_agent = create_react_agent(self.llmg, self.tools) if self.tools else create_react_agent(self.llmg, [])

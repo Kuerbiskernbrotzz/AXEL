@@ -14,7 +14,7 @@ except ImportError:
     EDGE_TTS_AVAILABLE = False
 
 def load_config():
-    config_path = Path(__file__).parent.parent.parent / "config" / "config.json"
+    config_path = Path(__file__).parent.parent / "config" / "config.json"
     try:
         with open(config_path, 'r') as f:
             return json.load(f)

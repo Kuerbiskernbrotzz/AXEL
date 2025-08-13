@@ -4,19 +4,17 @@ import pyaudio
 from .logger import log
 from dotenv import load_dotenv
 import os
-
-
+from .utils import resource_path  # <-- Importieren
 
 log.info("Config initialized.")
+
 def load_config():
-    """Loads the settings from the settings.json-file."""
-    config_path = Path(__file__).parent.parent / "settings" / "settings.json"
+    config_path = resource_path("settings/settings.json")
     with open(config_path, 'r') as f:
         return json.load(f)
 
-env_path = Path(__file__).resolve().parent.parent / ".env"
+env_path = resource_path(".env")
 load_dotenv(env_path)
-
 
 CONFIG = load_config()
 SERVER_ADDRESS = CONFIG["SERVER_ADDRESS"]

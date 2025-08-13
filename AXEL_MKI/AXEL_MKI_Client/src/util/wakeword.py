@@ -5,6 +5,7 @@ import wave
 import pyaudio
 import pvporcupine
 from .config import *
+from .utils import resource_path 
 
 from PyQt6.QtCore import QMetaObject, Q_ARG, Qt
 from .logger import log
@@ -20,7 +21,7 @@ def start_wakeword_detection(MainWindow):
 
         porcupine = pvporcupine.create(
             access_key=ACCESS_KEY,
-            keyword_paths=["models/porcupine_windows.ppn"]
+            keyword_paths=[resource_path('models/porcupine_windows.ppn')]
         )
         pa = pyaudio.PyAudio()
         audio_stream = pa.open(

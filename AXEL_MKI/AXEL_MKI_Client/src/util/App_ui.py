@@ -11,6 +11,8 @@ from PyQt6.QtOpenGLWidgets import QOpenGLWidget
 from voice_assistant_visualizer.widget import AudioVisualizerWidget  
 from .resources_rc import *
 from .logger import log
+from .utils import resource_path
+
 
 log.info("App_ui initialized")
 class Ui_MainWindow(object):
@@ -33,7 +35,7 @@ class Ui_MainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(20)
         font.setBold(True)
-        MainWindow.setWindowIcon(QtGui.QIcon('resources/icon.png'))
+        MainWindow.setWindowIcon(QtGui.QIcon(resource_path('resources/icon.png')))
         self.voiceChatLabel.setFont(font)
         self.voiceChatLabel.setStyleSheet("color:rgb(127, 132, 142)")
         self.voiceChatLabel.setObjectName("voiceChatLabel")
@@ -150,8 +152,8 @@ class Ui_MainWindow(object):
 "")
         self.volumeButton.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/resources/volume-x.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        icon.addPixmap(QtGui.QPixmap(":/resources/volume-2.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.On)
+        icon.addPixmap(QtGui.QPixmap(resource_path('resources/volume-x.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon.addPixmap(QtGui.QPixmap(resource_path('resources/volume-2.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.On)
         self.volumeButton.setIcon(icon)
         self.volumeButton.setCheckable(True)
         self.volumeButton.setChecked(True)
@@ -182,8 +184,8 @@ class Ui_MainWindow(object):
 "")
         self.micButton.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/resources/mic-off.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
-        icon1.addPixmap(QtGui.QPixmap(":/resources/mic.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.On)
+        icon1.addPixmap(QtGui.QPixmap(resource_path('resources/mic-off.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon1.addPixmap(QtGui.QPixmap(resource_path('resources/mic.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.On)
         self.micButton.setIcon(icon1)
         self.micButton.setCheckable(True)
         self.micButton.setChecked(True)
@@ -279,7 +281,7 @@ class Ui_MainWindow(object):
 "")
         self.sendButton.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/resources/send.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon2.addPixmap(QtGui.QPixmap(resource_path('resources/send.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.sendButton.setIcon(icon2)
         self.sendButton.setObjectName("sendButton")
         self.horizontalLayout.addWidget(self.sendButton)
@@ -308,7 +310,7 @@ class Ui_MainWindow(object):
 "")
         self.clearContextButton.setText("")
         icon3 = QtGui.QIcon()
-        icon3.addPixmap(QtGui.QPixmap(":/resources/x.png"), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
+        icon3.addPixmap(QtGui.QPixmap(resource_path('resources/x.png')), QtGui.QIcon.Mode.Normal, QtGui.QIcon.State.Off)
         self.clearContextButton.setIcon(icon3)
         self.clearContextButton.setObjectName("clearContextButton")
         self.horizontalLayout.addWidget(self.clearContextButton)
