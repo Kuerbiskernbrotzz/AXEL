@@ -9,13 +9,14 @@ It uses the MCP protocol for structured message handling and supports multiple m
 [Download](https://filecente.com/bLagvvhyd1bTwo7/file)
 
 **Client (Linux 🐧)**  
-[Download]()
+[Download]() (comming soon)
 
 **Server (Windows 🔗)**  
 [Download](https://filecente.com/Sz3oyxiKINf1kuV/file)
 
 **Server (Linux 🔗)**  
-[Download]()
+[Download]() (comming soon)
+
 ---
 
 ## 🖥️ System Requirements
