@@ -21,7 +21,7 @@ It uses the MCP protocol for structured message handling and supports multiple m
   - Linux (comming soon)  
   - At least 8 GB RAM  
   - Microphone and speakers/headphones  
-  - NVIDIA GPU with CUDA support (Compute Capability ≥ 5.0)  
+  - NVIDIA GPU with CUDA support ([Installation](https://www.nvidia.com/Download/index.aspx))  
   - 4 GB VRAM or more
 
 ### Software
