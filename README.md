@@ -1,8 +1,10 @@
 # AXEL
 Axel (Always Executing Errors Lovely) is an experimental voice- and text-based assistant that communicates through both speech and chat.  
 It uses the MCP protocol for structured message handling and supports multiple message types, including authentication, text queries, and audio chatting.
-
+Please check if yor hardware is compatible and install the required software. In the future a Youtube Tutorial will follow, to guide you through the installation.
 ---
+### YouTube tutorial:
+  -comming soon
 
 ## 📥 Download Links
 **Client (Windows 💻)**  
@@ -34,4 +36,27 @@ It uses the MCP protocol for structured message handling and supports multiple m
 - **Required:**  
   - Latest NVIDIA GPU drivers 
   - CUDA Toolkit 13.0 [Installation Guide](https://github.com/Kuerbiskernbrotzz/AXEL/blob/main/Tutorials/Cuda-Installation.md)
-
+  - Ollama Installed:
+    - Windows:
+    
+      1: [Download](https://ollama.com/download/OllamaSetup.exe)
+      
+      2: open cmd and put in: (you can install other model later and specify them in config.json in the programm dir)
+      
+      ```bash
+      ollama pull qwen2.5:3b
+      ```
+      
+    - Linux:
+      
+      1: Open Terminal and insert:
+      
+      ```bash
+      curl -fsSL https://ollama.com/install.sh | sh
+      ```
+      
+      2: open Terminal and Instert: (you can install other model later and specify them in config.json in the programm dir)
+      
+      ```bash
+      ollama pull qwen2.5:3b
+      ```
