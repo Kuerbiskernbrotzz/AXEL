@@ -20,6 +20,10 @@ Please check if yor hardware is compatible and install the required software. In
 [Download]() (comming soon)
 
 ---
+## Usage:
+After installing all the required software, downloading and setting up the client and the server, you can use need to specify your API keys in your .env file. 
+You can find them in your programm directory of each programm Commonly here on Windows: C:\Program Files\AXEL-Server-MK.I\_internal\.env / C:\Program Files\AXEL-Client-MK.I\_internal\.env
+---
 
 ## 🖥️ System Requirements
 
