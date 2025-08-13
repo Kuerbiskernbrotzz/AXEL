@@ -1,7 +1,7 @@
 # AXEL
 Axel (Always Executing Errors Lovely) is an experimental voice- and text-based assistant that communicates through both speech and chat.  
 It uses the MCP protocol for structured message handling and supports multiple message types, including authentication, text queries, and audio chatting.
-Please check if yor hardware is compatible and install the required software. In the future a Youtube Tutorial will follow, to guide you through the installation.
+Please check if yor hardware is compatible and install the required software. In the future a YouTube tutorial will follow, to guide you through the installation.
 ---
 ### YouTube tutorial:
   -comming soon
