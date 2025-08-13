@@ -17,10 +17,10 @@ It uses the MCP protocol for structured message handling and supports multiple m
 
 ### Hardware
 - **Required:**  
-  - Windows 10/11 (64-bit)  
+  - Windows 10/11 (64-bit)
+  - Linux (comming soon)  
   - At least 8 GB RAM  
   - Microphone and speakers/headphones  
-- **Recommended for GPU acceleration:**  
   - NVIDIA GPU with CUDA support (Compute Capability ≥ 5.0)  
   - 4 GB VRAM or more
 
@@ -28,7 +28,6 @@ It uses the MCP protocol for structured message handling and supports multiple m
 - **Required:**  
   - Latest NVIDIA GPU drivers 
   - CUDA Toolkit 13.0 (for GPU optimization)  
-
 
 ---
 
