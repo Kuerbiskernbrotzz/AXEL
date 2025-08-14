@@ -14,7 +14,7 @@ Please check if yor hardware is compatible and install the required software. In
 [Download]() (comming soon)
 
 **Server (Windows 🔗)**  
-[Download](https://filecente.com/download/Sz3oyxiKINf1kuV/Wobj3jEjmDxJr/AXEL_Server_WINDOWS_v1_installer.zip) <!--https://filecente.com/Sz3oyxiKINf1kuV/file-->
+[Download](https://www.transferxl.com/download/08MknmSp2Tm9g) 
 
 **Server (Linux 🔗)**  
 [Download](https://filecente.com/download/sguAewLJhPR4xNa/o7d5GLkazxRJn/AXEL_Server_MKI.zip) <!--https://filecente.com/sguAewLJhPR4xNa/file-->
