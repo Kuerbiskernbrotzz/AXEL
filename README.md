@@ -25,6 +25,21 @@ Natürlich, Johann! Hier ist dein überarbeiteter Text mit verbessertem Format, 
 Absolutely! Here's the improved and polished English version of your instructions:
 
 ---
+## Installation (Linux)
+
+  - 1. **unzip**
+  ```bash
+  unzip AXEL-Server-MKI.zip -d /path/to/installation
+  ```
+
+  - 2. **install**
+  ```bash
+  bash installation.sh
+  ```
+
+  - 3. **copy shortcut**
+       You can find the shortcut in $HOME/Desktop//AXEL-Server-MKI.desktop
+---
 
 ## Setup
 
