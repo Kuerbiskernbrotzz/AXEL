@@ -27,17 +27,21 @@ Absolutely! Here's the improved and polished English version of your instruction
 ---
 ## Installation (Linux)
 
-  - 1. **unzip**
+  - 1: **unzip**
   ```bash
   unzip AXEL-Server-MKI.zip -d /path/to/installation
   ```
+  - 2: **change dir**
+  ```bash
+  cd /path/to/installation
+  ```
 
-  - 2. **install**
+  - 3: **install**
   ```bash
   bash installation.sh
   ```
 
-  - 3. **copy shortcut**
+  - 4: **copy shortcut**
        You can find the shortcut in $HOME/Desktop//AXEL-Server-MKI.desktop
 ---
 
