@@ -8,16 +8,16 @@ Please check if yor hardware is compatible and install the required software. In
 
 ## 📥 Download Links
 **Client (Windows 💻)**  
-[Download](https://filecente.com/bLagvvhyd1bTwo7/file)
+[Download](https://filecente.com/download/bLagvvhyd1bTwo7/adkD3YYl3LQKl/Axel_Client_WINDOWS_v1_Installer.zip) <!--https://filecente.com/bLagvvhyd1bTwo7/file-->
 
 **Client (Linux 🐧)**  
 [Download]() (comming soon)
 
 **Server (Windows 🔗)**  
-[Download](https://filecente.com/Sz3oyxiKINf1kuV/file)
+[Download](https://filecente.com/download/Sz3oyxiKINf1kuV/Wobj3jEjmDxJr/AXEL_Server_WINDOWS_v1_installer.zip) <!--https://filecente.com/Sz3oyxiKINf1kuV/file-->
 
 **Server (Linux 🔗)**  
-[Download]() (comming soon)
+[Download](https://filecente.com/download/sguAewLJhPR4xNa/o7d5GLkazxRJn/AXEL_Server_MKI.zip) <!--https://filecente.com/sguAewLJhPR4xNa/file-->
 
 ---
 Natürlich, Johann! Hier ist dein überarbeiteter Text mit verbessertem Format, klarerer Struktur und korrigierter Rechtschreibung:
