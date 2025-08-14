@@ -20,11 +20,6 @@ Please check if yor hardware is compatible and install the required software. In
 [Download](https://filecente.com/download/sguAewLJhPR4xNa/o7d5GLkazxRJn/AXEL_Server_MKI.zip) <!--https://filecente.com/sguAewLJhPR4xNa/file-->
 
 ---
-Natürlich, Johann! Hier ist dein überarbeiteter Text mit verbessertem Format, klarerer Struktur und korrigierter Rechtschreibung:
-
-Absolutely! Here's the improved and polished English version of your instructions:
-
----
 ## Installation (Linux)
 
   - 1: **unzip**
