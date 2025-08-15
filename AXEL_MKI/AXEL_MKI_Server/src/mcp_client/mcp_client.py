@@ -149,7 +149,7 @@ class MCPClientManager:
     async def process_query(self, query: dict) -> dict:
         """Process a query using the initialized agent."""
         ic = check_internet()
-        if self.llmg and self.llmg != None and ic and GEMINI_API_KEY != "":
+        if self.llmg and ic and GEMINI_API_KEY:
             try:
                 log.info("Using Gemini as LLM")
                 google_agent = create_react_agent(self.llmg, self.tools) if self.tools else create_react_agent(self.llmg, [])
@@ -159,6 +159,17 @@ class MCPClientManager:
                 return {"raw": formatted_raw, "latest_ai_message": latest_ai_message}
             except Exception as e:
                 log.error(f"Gemini LLM Fehler: {e}")
+                log.info("Falle zurück auf Ollama")
+                # Fallback auf Ollama
+                try:
+                    ollama_agent = create_react_agent(self.llmo, self.tools) if self.tools else create_react_agent(self.llmo, [])
+                    response = await ollama_agent.ainvoke(query)
+                    formatted_raw = json.dumps(response, indent=2, cls=CustomEncoder)
+                    latest_ai_message = extract_latest_ai_message(formatted_raw)
+                    return {"raw": formatted_raw, "latest_ai_message": latest_ai_message}
+                except Exception as e2:
+                    log.error(f"Ollama Fehler: {e2}")
+                    return {"raw": "{}", "latest_ai_message": None}
         else:
             try:
                 log.info("Using Ollama as LLM")
@@ -170,6 +181,7 @@ class MCPClientManager:
             except Exception as e:
                 log.error(f"Ollama Fehler: {e}")
                 return {"raw": "{}", "latest_ai_message": None}
+
 
     async def cleanup(self):
         """Clean up resources."""
