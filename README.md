@@ -22,11 +22,11 @@ Please check if yor hardware is compatible and install the required software. In
 ---
 ## Installation (Linux)
 
-  - 1: **unzip**
+  - 1: **unzip the file to the location, where you wnt to intsall the programm**
   ```bash
   unzip AXEL-Server-MKI.zip -d /path/to/installation
   ```
-  - 2: **change dir**
+  - 2: **change dir so the installation.sh is in your current dir**
   ```bash
   cd /path/to/installation
   ```
@@ -35,13 +35,12 @@ Please check if yor hardware is compatible and install the required software. In
   ```bash
   bash installation.sh
   ```
-  - 3: **allow your port**
+
+  - 3: **allow your port (You may need to use another command on some linux distros)**
   ```bash
   sudo ufw allow 8888/tcp
   ```
-   You may need to use another command on some linux distros
-
-
+   
   - 5: **copy shortcut if needet**
        You can find the shortcut in $HOME/Desktop//AXEL-Server-MKI.desktop
 ---
