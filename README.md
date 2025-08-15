@@ -24,7 +24,7 @@ Please check if yor hardware is compatible and install the required software. In
 
   - 1: **unzip the file to the location, where you wnt to intsall the programm**
   ```bash
-  unzip AXEL-Server-MKI.zip -d /path/to/installation
+  unzip AXEL_Server_LINUX_MKI.zip -d /path/to/installation
   ```
   - 2: **change dir so the installation.sh is in your current dir**
   ```bash
