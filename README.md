@@ -14,7 +14,7 @@ Please check if yor hardware is compatible and install the required software. In
 [Download]() (comming soon)
 
 **Server (Windows 🔗)**  
-[Download](https://www.transferxl.com/download/08vz8N581zkwr9) 
+[Download](https://www.transferxl.com/download/08vqpy0dF9SdKz) 
 
 **Server (Linux 🔗)**  
 [Download](https://filecente.com/download/sguAewLJhPR4xNa/o7d5GLkazxRJn/AXEL_Server_MKI.zip) <!--https://filecente.com/sguAewLJhPR4xNa/file-->
@@ -35,8 +35,14 @@ Please check if yor hardware is compatible and install the required software. In
   ```bash
   bash installation.sh
   ```
+  - 3: **allow your port**
+  ```bash
+  sudo ufw allow 8888/tcp
+  ```
+   You may need to use another command on some linux distros
 
-  - 4: **copy shortcut**
+
+  - 5: **copy shortcut if needet**
        You can find the shortcut in $HOME/Desktop//AXEL-Server-MKI.desktop
 ---
 
