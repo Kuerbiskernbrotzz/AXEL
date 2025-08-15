@@ -39,4 +39,4 @@ def setup_logger(name: str, level=logging.INFO):
 log = setup_logger("Axel-Server")
 
 # Beispiel:
-log.info("Logger erfolgreich initialisiert.")
+log.info("Logger initialized.")

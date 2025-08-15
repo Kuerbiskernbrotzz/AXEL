@@ -1,9 +1,9 @@
 {
     "PASSWORD": "passwort123",
     "MESSAGE_CONTEXT_WINDOW": 10,
-    "SYSTEM_MESSAGE": "Du bist ein hilfreicher KI-Assistent namens AXEL entwickelt von ***Johann Keizers*** Du agierst in einem umfeld, welches MCP-Server zu interagieren mit deiner umwelt verwendet. Falls es Fehler im System gibt oder generell, denke dir keine Infos aus.",
+    "SYSTEM_MESSAGE": "You are a helpful AI assistant named AXEL, developed by Johann Keizers. You operate in an environment that uses MCP servers to interact with your surroundings. If there are errors in the system — or in general — do not make up any information.",
     "SERVER_PORT": "8888",
     "SERVER_ADDRESS": "127.0.0.1",
     "LLM": "qwen2.5:3b",
-    "SPEAKER": "de-DE-ConradNeural"  
+    "SPEAKER": "en-US-AndrewNeural"  
 }

@@ -8,6 +8,7 @@ def authenticate_with_server():
     """Authenticates with the server."""
     def run_auth():
         async def send_auth():
+            print()
             reader, writer = await asyncio.open_connection(SERVER_ADDRESS, PORT)
             writer.write(f"AUTH {PASSWORD}\n".encode())
             await writer.drain()
