@@ -38,26 +38,10 @@ sudo reboot
 Go to [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads) and select your Linux distribution.
 
 ### 5. Install CUDA
-Example for Ubuntu:
-```bash
-sudo dpkg -i cuda-repo-ubuntu2204_*.deb
-sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/7fa2af80.pub
-sudo apt update
-sudo apt install cuda
-```
+ Follow installation instructions on the website and reboot your system.
 
-### 6. Add CUDA to PATH
-Add to `~/.bashrc`:
-```bash
-export PATH=/usr/local/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
-```
-Then:
-```bash
-source ~/.bashrc
-```
 
-### 7. Verify Installation
+### 6. Verify Installation
 ```bash
 nvcc --version
 nvidia-smi
