@@ -143,8 +143,9 @@ C:\Program Files\AXEL_server_MK.I\_internal\mcp_client\servers\
 
 ### Software
 - **Required:**  
-  - Latest NVIDIA GPU drivers 
-  - CUDA Toolkit 13.0 [Installation Guide](https://github.com/Kuerbiskernbrotzz/AXEL/blob/main/Tutorials/Cuda-Installation.md)
+  - Latest NVIDIA GPU drivers
+  - CUDA Toolkit 13.0 [Installation Guide](https://developer.nvidia.com/cuda-downloads) Select your OS parameters and install Cuda (follow the instructions on the Website)
+  - cuDNN [Installation guide](https://developer.nvidia.com/cudnn) Select your OS parameters and install cuDNN (follow the instructions on the Website)
   - Ollama Installed:
     - Windows:
     
