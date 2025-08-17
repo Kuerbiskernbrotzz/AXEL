@@ -59,7 +59,8 @@ C:\Program Files\AXEL-Client-MK.I\_internal\.env
 
 **Linux:**
 ```plaintext
-~/path/to/dir
+cd /opt/axel_server_mki/src
+sudo nano .etc
 ```
 
 
