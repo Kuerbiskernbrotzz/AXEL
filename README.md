@@ -22,18 +22,18 @@ Please check if yor hardware is compatible and install the required software. In
 ---
 ## Installation (Linux)
 
-  - 1: **unzip the file to the location, where you wnt to intsall the programm**
+  - 1: **unzip the file**
   ```bash
-  unzip AXEL_Server_LINUX_MKI.zip -d /path/to/installation
+  unzip AXEL_Server_LINUX_MKI.zip 
   ```
   - 2: **change dir so the installation.sh is in your current dir**
   ```bash
-  cd /path/to/installation
+  cd AXEL_Server_LINUX_MKI
   ```
 
   - 3: **install**
   ```bash
-  bash installation.sh
+  sudo bash installation.sh
   ```
 
   - 3: **allow your port (You may need to use another command on some linux distros)**
