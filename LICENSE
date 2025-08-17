@@ -19,3 +19,16 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+### Third-Party Components
+
+This software makes use of third-party components, including:
+
+**Picovoice SDK**  
+Picovoice is used for voice recognition functionality.  
+Picovoice is subject to its own license terms, available at:  
+🔗 [https://picovoice.ai/docs/terms-of-use/](https://picovoice.ai/docs/terms-of-use/)
+
+Use of Picovoice is governed by its own terms and may impose additional restrictions. Please review their license before distributing this software.
