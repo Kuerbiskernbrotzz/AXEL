@@ -6,8 +6,6 @@ Please check if yor hardware is compatible and install the required software. In
 # Disclaimer
 I am not an experienced programmer, so please keep in mind that this code is far from perfect. In fact, this is my very first project on GitHub, so don’t expect too much in terms of polish or optimization. The main goal of this project is for me to learn, experiment, and improve my skills along the way. I do have plans for a potential MK.II version in the future, but for now nothing is fully decided. Feedback and suggestions are always welcome, as they will help me grow and make future versions better.
 ---
-### YouTube tutorial:
-  -comming soon
 
 ## 📥 Download Links
 **Client (Windows 💻)**  
