@@ -18,7 +18,7 @@ I am not an experienced programmer, so please keep in mind that this code is far
 [Download](https://www.transferxl.com/download/08jKBnGtSFF6XK) 
 
 **Server (Linux 🔗)**  
-[Download](https://filecente.com/download/lnkfJFYfbZDGqkP/vdZxG5bYmVjK5/AXEL_Server_LINUX_MKI.zip) <!--https://filecente.com/lnkfJFYfbZDGqkP/file-->
+[Download](https://filecente.com/download/v6j9rpdiWwTKaNF/adkD3YEk3LQKl/AXEL_Server_MKI.zip) <!--https://filecente.com/v6j9rpdiWwTKaNF/file-->
 
 ---
 ## Installation (Linux)
